@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Metas con Descripcion -->
+    <meta name="description" content="Aplicación de Clima - Consumo de API">
+    <meta name="keywords" content="app de clima, clima, weather, app, api">
+    <meta name="author" content="Agustina Mailen Velazquez">
+    <title>Clima App</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="./styles.css">
+    <!-- Font Awesome - Icons -->
+    <script src="https://kit.fontawesome.com/eae8fc4e25.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main class="container">
+        <div class="weather-header">
+            <form class="weather-buscador">
+                <input type="text" placeholder="Ciudad..." class="weather-searchform">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </form> 
+            <div class="weather-unidades">
+                <span class="weather-unidad-celsius">°C</span>
+                <span class="weather-unidad-farenheit">°F</span>
+            </div>
+        </div>
+        <div class="weather-body">
+            <h1 class="ciudad"></h1>
+            <div class="fecha-hora">
+            </div>
+            <div class="pronostico"></div>
+            <div class="weather-icon">
+            </div>
+            <p class="temperatura">
+            </p>
+            <div class="temperatura-minmax">
+                <p>Min:</p>
+                <p>Max:</p>
+            </div>
+        </div>
+
+        <div class="weather-info">
+            <div class="weather-item">
+                <i class="fa-solid fa-temperature-full"></i>
+                <div>
+                    <p>Real Feel</p>
+                    <p class="realFeel"></p>
+                </div>
+            </div>
+            <div class="weather-item">
+                <i class="fa-solid fa-droplet"></i>
+                <div>
+                    <p>Humedad</p>
+                    <p class="humedad"></p>
+                </div>
+            </div>
+            <div class="weather-item">
+                <i class="fa-solid fa-wind"></i>
+                <div>
+                    <p>Viento</p>
+                    <p class="viento"></p>
+                </div>
+            </div>
+            <div class="weather-item">
+                <i class="fa-solid fa-gauge-high"></i>
+                <div>
+                    <p>Presión</p>
+                    <p class="presion"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
